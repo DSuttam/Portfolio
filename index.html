@@ -232,11 +232,19 @@
         <a href="javascript:void(0)" onclick="callNow()" class="block px-4 py-3 mt-4 text-center rounded-xl text-base font-bold bg-accent text-white shadow-lg shadow-accent/20">Call Me</a>
         
         <!-- Mobile Theme Controls -->
-        <div class="flex items-center justify-between px-4 py-4 mt-4 border-t border-slate-200 dark:border-white/10">
+        <div class="px-4 py-4 mt-4 border-t border-slate-200 dark:border-white/10">
           <span class="text-sm font-medium text-slate-500 dark:text-slate-400">Appearance</span>
-          <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300">
-            <i data-lucide="sun-moon" class="w-5 h-5"></i>
-          </button>
+          <div class="flex items-center justify-between mt-2">
+            <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300">
+              <i data-lucide="sun-moon" class="w-5 h-5"></i>
+            </button>
+            <div class="flex items-center space-x-1.5">
+              <button onclick="setTheme('blue')" class="w-3.5 h-3.5 rounded-full bg-blue-500 hover:scale-125 transition-transform ring-2 ring-transparent hover:ring-blue-500/30" aria-label="Blue Theme"></button>
+              <button onclick="setTheme('purple')" class="w-3.5 h-3.5 rounded-full bg-purple-500 hover:scale-125 transition-transform ring-2 ring-transparent hover:ring-purple-500/30" aria-label="Purple Theme"></button>
+              <button onclick="setTheme('green')" class="w-3.5 h-3.5 rounded-full bg-emerald-500 hover:scale-125 transition-transform ring-2 ring-transparent hover:ring-emerald-500/30" aria-label="Green Theme"></button>
+              <button onclick="setTheme('red')" class="w-3.5 h-3.5 rounded-full bg-rose-500 hover:scale-125 transition-transform ring-2 ring-transparent hover:ring-rose-500/30" aria-label="Red Theme"></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
